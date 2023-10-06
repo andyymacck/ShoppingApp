@@ -2,6 +2,7 @@
 import { UserForRegister } from './types';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import styles from './Stylesheets/checkoutform.module.css';
 
 const Registration: React.FC = () => {
     const [formData, setFormData] = useState<UserForRegister>({
@@ -36,26 +37,46 @@ const Registration: React.FC = () => {
             setMessage("Error registering");
         }
     }
+
     return (
-        <div>
-            <h2>Register</h2>
-            {message && <div>{message}</div>}
+        <div className={styles.container}>
+            <h2 className={styles.h4}>Register</h2>
+            {message && <div className={styles.message}>{message}</div>}
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Username:</label>
-                    <input type="text" name="username" value={formData.username} onChange={handleChange} />
+                <div className={styles.inputGroup}>
+                    <label className={styles.label}>Username:</label>
+                    <input
+                        type="text"
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
                 </div>
-                <div>
-                    <label>Password:</label>
-                    <input type="password" name="password" value={formData.password} onChange={handleChange} />
+                <div className={styles.inputGroup}>
+                    <label className={styles.label}>Password:</label>
+                    <input
+                        type="password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
                 </div>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} />
+                <div className={styles.inputGroup}>
+                    <label className={styles.label}>Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className={styles.input}
+                    />
                 </div>
-                <button type="submit">Register</button>
+                <button type="submit" className={styles.button}>Register</button>
             </form>
         </div>
     );
 }
+
 export default Registration;

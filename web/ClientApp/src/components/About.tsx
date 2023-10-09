@@ -22,12 +22,12 @@ import styles from './Stylesheets/groupform.module.css';
                 <section className={styles.ourTeam}> {/* Use styles.ourTeam for class */}
                     <h2>Our Team</h2>
                     <div className={styles.teamMember}> {/* Use styles.teamMember for class */}
-                        <img src="team-member-1.jpg" alt="John Doe - Founder" />
+                        <img src="/images/aboutpage1.jpg" alt="John Doe - Founder" />
                         <h3>John Doe</h3>
                         <p>Founder & CEO</p>
                     </div>
                     <div className={styles.teamMember}> {/* Use styles.teamMember for class */}
-                        <img src="team-member-2.jpg" alt="Jane Smith - Fashion Consultant" />
+                        <img src="/images/aboutpage2.jpeg" alt="Jane Smith - Fashion Consultant" />
                         <h3>Jane Smith</h3>
                         <p>Fashion Consultant</p>
                     </div>

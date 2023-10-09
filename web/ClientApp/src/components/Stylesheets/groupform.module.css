@@ -1,0 +1,206 @@
+﻿
+/* contactform.module.css */
+
+/* Global styles */
+.container {
+    max-width: 40em;
+    padding: 1em 3em 2em 3em;
+    margin: 0em auto;
+    background-color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+
+
+/* Styling for Login Form */
+.loginForm {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+    .loginForm label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .loginForm input[type="text"],
+    .loginForm input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .loginForm button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .loginForm button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+/* Styling for Order Success Message */
+.orderSuccess {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for Create New Clothes Form */
+.createClothesForm {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+    .createClothesForm label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .createClothesForm input[type="text"],
+    .createClothesForm input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .createClothesForm select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .createClothesForm button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+/* Styling for Clothes List */
+.clothesList {
+    margin-top: 20px;
+}
+
+    .clothesList table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .clothesList th, .clothesList td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .clothesList th {
+        background-color: #f2f2f2;
+    }
+
+    /* Styling for Edit and Delete Buttons */
+    .clothesList button {
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+        .clothesList button.edit {
+            background-color: #007bff;
+        }
+
+/* Styling for About Us Section */
+.aboutUs {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+    .aboutUs h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .aboutUs p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+/* Styling for Our Team Section */
+.ourTeam {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+    .ourTeam .teamMember {
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+        .ourTeam .teamMember img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+/* Styling for Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+    footer p {
+        margin: 0;
+    }

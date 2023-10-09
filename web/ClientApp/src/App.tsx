@@ -4,7 +4,6 @@ import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
 import Registration from './components/Registration';
 import { AuthProvider } from './components/auth-context';
 import { Products } from './components/Products';
@@ -23,7 +22,6 @@ const App = () => {
         <AuthProvider>
           <Layout>
             <Route exact path='/' component={Home} />
-            <Route path='/counter' component={Counter} />
             <Route path='/fetch-data' component={FetchData} />
             <Route path='/register' component={Registration} />
             <Route path='/login' component={Login} />

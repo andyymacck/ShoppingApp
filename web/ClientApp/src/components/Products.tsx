@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useState } from 'react';
 import { useAuth } from './auth-context';
-import styles from './Stylesheets/contactform.module.css';
+import styles from './Stylesheets/groupform.module.css';
 import  axios from 'axios';
 import { Category, Clothes } from './types'
 
@@ -38,10 +38,11 @@ const Products = () => {
 
 
     return (
+        <div className={styles.container}>
         <div className={styles.row}>
-            <h1>Welcome!</h1>
-            <p>This is Andy's clothing warehouse.</p>
-            <p>We have new and used clothes in bulk and will ship directly to you within 5 business days!</p>
+                <h1 className={styles.header}>Welcome!</h1>
+                <p className={styles.paragraph}>This is Andy's clothing warehouse.</p>
+                <p className={styles.paragraph}>We have new and used clothes in bulk and will ship directly to you within 5 business days!</p>
             <table>
                 <thead>
                     <tr>
@@ -68,6 +69,7 @@ const Products = () => {
                     ))}
                 </tbody>
             </table>
+            </div>
         </div>
     );
 }

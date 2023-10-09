@@ -3,7 +3,7 @@ import { UserForLogin } from './types';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { useAuth } from './auth-context';
-import styles from './Stylesheets/contactform.module.css';
+import styles from './Stylesheets/groupform.module.css';
 
 
 const Login: React.FC = () => {
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
     
     return (
         <div className={styles.container}>
-            <h2 className={styles.row}> Login </h2>
+            <h2 className={styles.row}>Login</h2>
             {message && <div>{message}</div>}
             <form onSubmit={handleSubmit}>
                 <div>

@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import styles from './Stylesheets/groupform.module.css';
 
 const OrderSuccessPage = () => {
     const { orderId } = useParams<{ orderId: string }>();
@@ -39,10 +40,10 @@ const OrderSuccessPage = () => {
     if (error) return <div>{error}</div>;
 
     return (
-        <div>
-            <h2>Order Success!</h2>
+        <div className={styles.container}>
+            <h2 className={styles.orderSuccess}>Order Success!</h2>
             <p>Your order number is {orderId}.</p>
-            {orderDetails && <p>Total Cost: ${orderDetails.totalCost}</p>}
+            {orderDetails && <p className={styles.totalCost}>Total Cost: ${orderDetails.totalCost}</p>}
         </div>
     );
 };

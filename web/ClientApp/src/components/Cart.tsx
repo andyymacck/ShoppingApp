@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { ProductDto, CartItemDto } from './types';
 import { Link } from 'react-router-dom';
+import styles from './Stylesheets/groupform.module.css';
 
 
 const Cart = () => {
@@ -50,7 +51,8 @@ const Cart = () => {
     };
 
     return (
-        <div>
+        <div className={styles.container}>
+            <div className={styles.row}>
             <table>
                 <thead>
                     <tr>
@@ -89,6 +91,7 @@ const Cart = () => {
             ) : (
                 <p>Your cart is empty!</p>
             )}
+            </div>
         </div>
     );
 };

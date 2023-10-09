@@ -2,7 +2,7 @@
 import { UserForRegister } from './types';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import styles from './Stylesheets/checkoutform.module.css';
+import styles from './Stylesheets/groupform.module.css';
 
 const Registration: React.FC = () => {
     const [formData, setFormData] = useState<UserForRegister>({

@@ -13,3 +13,9 @@ Add DB connection string to appsettings.json
 Build and run using docker:
 
 Install docker image using docker-compose up --build
+
+---------------------------
+Login info to test admin management abilities:
+
+string userName = "admin";
+string password = "Admin@123";

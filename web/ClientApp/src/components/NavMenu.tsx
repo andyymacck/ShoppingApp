@@ -13,7 +13,7 @@ export const NavMenu = () => {
     return (
         <Menu stackable color='violet'>
             <Menu.Item>
-                <img alt="logo" src='/images/shirtlogo.jpg' />
+                <img alt="logo" src='/images/logo2.jpg' />
             </Menu.Item>
 
             {!isLoggedIn ? (

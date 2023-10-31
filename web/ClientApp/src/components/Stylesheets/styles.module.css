@@ -93,7 +93,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-button {
+.button {
     min-width: 75px;
     padding: 1em;
     margin: 0.25em;
